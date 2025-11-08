@@ -1,0 +1,185 @@
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  background-color: #2984c0;
+}
+
+img {
+  border-radius: 5px;
+}
+
+/* CONTAINERS */
+#main-container {
+  display: flex;
+  margin-top: 30px;
+}
+
+#banner-container,
+#form-container {
+  flex: 1 1 0;
+  width: 50%;
+}
+
+#banner-container {
+  text-align: right;
+}
+
+#form-container {
+  text-align: center;
+}
+
+/* LOGIN FORM */
+#form-box {
+  background-color: #2984c0;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#logo-axis {
+  width: 200px;
+  height: 100px;
+  margin: 30px auto 12px;
+}
+
+#login-form {
+  margin-top: 20px;
+}
+
+#login-form input {
+  display: block;
+  font-size: 12px;
+  padding: 12px 9px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  width: 268px;
+  margin: 10px auto;
+}
+
+#login-form a {
+  background-color: #fff;
+  cursor: pointer;
+  color: #2984c0;
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* SEPARADOR */
+.separator {
+  position: relative;
+}
+
+.line {
+  border-top: 1px solid #dbdbdb;
+  width: 268px;
+  margin: 25px auto 35px;
+}
+
+.separator span {
+  position: absolute;
+  text-transform: uppercase;
+  color: #2984c0;
+  background-color: #fff;
+  top: -6px;
+  width: 50px;
+  margin-left: -25px;
+  font-size: 14px;
+}
+
+/* FORGOT PASSWORD */
+#forgot-pass {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+#forgot-pass a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* REGISTRER */
+#register-container {
+  background-color: #2984c0;
+  width: 100%;
+  margin-top: 10px;
+  padding: 25px;
+}
+
+#register-container p {
+  font-size: 14px;
+  color: #fff;
+}
+
+#register-container a {
+  color: #bbff00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: left;
+  width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer #footer-links {
+  display: flex;
+  list-style: none;
+}
+
+#footer-links li {
+  margin-right: 10px;
+}
+
+#footer-links a,
+#copyright {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+#copyright {
+  margin-top: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 450px) {
+  #main-container,
+  #form-box {
+    margin-top: 0;
+  }
+
+  #form-container,
+  #form-box,
+  #register-container,
+  #get-app-container {
+    width: 100%;
+    border: none;
+  }
+
+  footer {
+    width: 90%;
+  }
+
+  #footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #footer-links {
+    margin-bottom: 10px;
+  }
+}

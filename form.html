@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axis Tecnologia - Área de chamados</title>
+    <link rel="shortcut icon" href="img/pngwing.com.png" />
+    <link rel="stylesheet" href="css/form-styles.css" />
+    <script src="js/form-scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          class="axis-logo"
+          src="img/WhatsApp Image 2025-09-08 at 10.07.35 PM.jpeg"
+          alt="axis-logo"
+        />
+      </div>
+      <div class="form-container">
+        <div class="form-header">
+          <p>Abertura de chamado</p>
+        </div>
+        <div class="form-body">
+          <h1 class="form-title">Digite as informações abaixo:</h1>
+          <form id="ticketForm">
+            <div class="box-input">
+              <label for="title"
+                >Título <span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                name="title"
+                id="title"
+                class="block"
+                placeholder="Dê um título ao chamado"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+            </div>
+
+            <div class="box-input">
+              <label for="problem"
+                >Problema <span class="required-field">*</span></label
+              >
+              <textarea
+                name="problem"
+                id="problem"
+                placeholder="Descreva o problema a ser solucionado"
+                required
+              ></textarea>
+            </div>
+
+            <div class="box-input">
+              <p>Técnica designada: <span class="required-field">*</span></p>
+              <input
+                type="radio"
+                id="tecnico1"
+                name="tecnico"
+                value="Hardware"
+                required
+              />
+              <label for="tecnico1">Hardware</label>
+
+              <input
+                type="radio"
+                id="tecnico2"
+                name="tecnico"
+                value="Software"
+              />
+              <label for="tecnico2">Software</label>
+
+              <input type="radio" id="tecnico3" name="tecnico" value="Infra" />
+              <label for="tecnico3">Infra</label>
+
+              <input
+                type="radio"
+                id="tecnico4"
+                name="tecnico"
+                value="Internet"
+              />
+              <label for="tecnico4">Internet</label>
+
+              <input type="radio" id="tecnico5" name="tecnico" value="Fibra" />
+              <label for="tecnico5">Fibra</label>
+
+              <input type="radio" id="tecnico6" name="tecnico" value="Redes" />
+              <label for="tecnico6">Redes</label>
+            </div>
+
+            <div class="box-input">
+              <p>Prioridade: <span class="required-field">*</span></p>
+              <input
+                type="radio"
+                id="prioridade1"
+                name="prioridade"
+                value="Mínima"
+                required
+              />
+              <label for="prioridade1">Mínima</label>
+
+              <input
+                type="radio"
+                id="prioridade2"
+                name="prioridade"
+                value="Média"
+              />
+              <label for="prioridade2">Média</label>
+
+              <input
+                type="radio"
+                id="prioridade3"
+                name="prioridade"
+                value="Máxima"
+              />
+              <label for="prioridade3">Máxima</label>
+            </div>
+
+            <input type="submit" class="btn-submit" id="btn" value="Enviar" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
